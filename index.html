@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Auraloft — White Noise, Rain & Focus Sounds for Windows</title>
+<meta name="description" content="Auraloft is a white noise and calming sounds app for Windows. Play brown noise, pink noise, rain, ocean, forest, cafe, and fireplace sounds to focus, relax, study, or sleep — with a focus timer and a background tray player. No account, no ads." />
+<link rel="canonical" href="https://dakotad17.github.io/auraloft-site/" />
+<meta name="theme-color" content="#F4EFE6" />
+
+<!-- Open Graph / social -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Auraloft — White Noise, Rain & Focus Sounds for Windows" />
+<meta property="og:description" content="Brown noise, rain, ocean, cafe, and fireplace sounds for focus, study, and sleep. Mix two sounds, set a focus timer, and play from the system tray. No account, no ads." />
+<meta property="og:url" content="https://dakotad17.github.io/auraloft-site/" />
+<meta property="og:image" content="https://dakotad17.github.io/auraloft-site/assets/screenshot.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Auraloft — White Noise, Rain & Focus Sounds for Windows" />
+<meta name="twitter:description" content="Calming sounds for focus, study, and sleep on Windows. Mix, focus timer, and a tray player. No account, no ads." />
+<meta name="twitter:image" content="https://dakotad17.github.io/auraloft-site/assets/screenshot.png" />
+
+<link rel="icon" href="assets/icon.png" />
+
+<!-- Structured data helps search engines show rich results -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Auraloft",
+  "operatingSystem": "Windows 10, Windows 11",
+  "applicationCategory": "MultimediaApplication",
+  "description": "A white noise and calming sounds app for Windows. Play brown noise, pink noise, rain, ocean, forest, cafe, and fireplace sounds to focus, relax, study, or sleep, with a focus timer and a background tray player.",
+  "downloadUrl": "https://apps.microsoft.com/detail/9P3GD7FT5GVQ",
+  "installUrl": "https://apps.microsoft.com/detail/9P3GD7FT5GVQ",
+  "offers": [
+    { "@type": "Offer", "price": "0", "priceCurrency": "USD", "name": "Free" },
+    { "@type": "Offer", "price": "2.99", "priceCurrency": "USD", "name": "Auraloft Plus Monthly" },
+    { "@type": "Offer", "price": "19.99", "priceCurrency": "USD", "name": "Auraloft Plus Yearly" },
+    { "@type": "Offer", "price": "24.99", "priceCurrency": "USD", "name": "Auraloft Plus Lifetime" }
+  ],
+  "publisher": { "@type": "Organization", "name": "hears to you" }
+}
+</script>
+
+<style>
+  :root {
+    --bg: #F4EFE6;
+    --card: #FBF8F2;
+    --ink: #2C2A26;
+    --muted: #6B6459;
+    --sage: #6F8F74;
+    --terra: #C4785A;
+    --line: #E4DCCE;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.6;
+  }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+  header { padding: 22px 0; }
+  .brand { display: flex; align-items: center; gap: 12px; font-weight: 600; font-size: 20px; }
+  .brand img { width: 36px; height: 36px; border-radius: 9px; }
+
+  .hero { display: grid; grid-template-columns: 1.05fr 1fr; gap: 48px; align-items: center; padding: 40px 0 64px; }
+  .hero h1 { font-size: 44px; line-height: 1.12; margin: 0 0 16px; letter-spacing: -0.5px; }
+  .hero p.lead { font-size: 19px; color: var(--muted); margin: 0 0 28px; }
+  .cta { display: inline-flex; align-items: center; gap: 10px; background: var(--ink); color: #fff; text-decoration: none;
+         padding: 14px 22px; border-radius: 14px; font-weight: 600; font-size: 16px; transition: transform .12s ease, background .12s ease; }
+  .cta:hover { transform: translateY(-1px); background: #000; }
+  .sub { margin-top: 12px; font-size: 14px; color: var(--muted); }
+  .shot { width: 100%; border-radius: 18px; border: 1px solid var(--line); box-shadow: 0 12px 40px rgba(0,0,0,.14); display: block; }
+
+  section { padding: 56px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 30px; margin: 0 0 8px; letter-spacing: -0.3px; }
+  .section-lead { color: var(--muted); margin: 0 0 32px; font-size: 17px; }
+
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .feat { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 22px; }
+  .feat h3 { margin: 0 0 6px; font-size: 18px; }
+  .feat p { margin: 0; color: var(--muted); font-size: 15px; }
+
+  .sounds { display: flex; flex-wrap: wrap; gap: 10px; }
+  .tag { background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 8px 15px; font-size: 14px; color: var(--ink); }
+
+  .plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .plan { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 24px; text-align: center; }
+  .plan .price { font-size: 30px; font-weight: 700; margin: 6px 0; }
+  .plan .per { color: var(--muted); font-size: 14px; }
+  .plan.featured { border-color: var(--sage); box-shadow: 0 8px 26px rgba(111,143,116,.18); }
+
+  details { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 4px 20px; margin-bottom: 12px; }
+  summary { cursor: pointer; font-weight: 600; padding: 14px 0; }
+  details p { color: var(--muted); margin: 0 0 16px; }
+
+  footer { padding: 40px 0 64px; color: var(--muted); font-size: 14px; text-align: center; border-top: 1px solid var(--line); }
+
+  @media (max-width: 820px) {
+    .hero { grid-template-columns: 1fr; gap: 32px; padding: 20px 0 40px; }
+    .hero h1 { font-size: 34px; }
+    .grid, .plans { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand"><img src="assets/icon.png" alt="Auraloft app icon" /> Auraloft</div>
+  </header>
+
+  <main>
+    <section class="hero" style="border-top:none; padding-top:24px;">
+      <div>
+        <h1>Calming sounds for focus, study, and sleep on Windows</h1>
+        <p class="lead">Auraloft plays white noise, brown noise, rain, ocean, forest, cafe, and fireplace sounds — mix two at once, set a focus timer, and leave it running quietly in the system tray. No account. No ads.</p>
+        <a class="cta" href="https://apps.microsoft.com/detail/9P3GD7FT5GVQ">Get it on the Microsoft Store</a>
+        <div class="sub">Free to start · Windows 10 &amp; 11 · No sign-in</div>
+      </div>
+      <img class="shot" src="assets/screenshot.png" alt="Auraloft on Windows showing a library of calming sounds" />
+    </section>
+
+    <section id="features">
+      <h2>Everything you need to stay in the zone</h2>
+      <p class="section-lead">A quiet, focused sound app — nothing to sign into, nothing to scroll.</p>
+      <div class="grid">
+        <div class="feat"><h3>Noise for focus</h3><p>White, brown, pink, and green noise to mask distractions while you work or study.</p></div>
+        <div class="feat"><h3>Nature &amp; rain</h3><p>Rain on the roof, ocean waves, forest, creek, and more to help you relax.</p></div>
+        <div class="feat"><h3>Cozy backgrounds</h3><p>Cafe chatter, a crackling fireplace, and warm room tones for reading and unwinding.</p></div>
+        <div class="feat"><h3>Mix two sounds</h3><p>Layer a second sound — like brown noise under rain — and save it as a scene.</p></div>
+        <div class="feat"><h3>Focus timer</h3><p>Set a session length and the sound fades out gently when time is up.</p></div>
+        <div class="feat"><h3>Lives in the tray</h3><p>Plays in the background with a compact always-on-top mini player and media keys.</p></div>
+      </div>
+    </section>
+
+    <section id="sounds">
+      <h2>Dozens of sounds</h2>
+      <p class="section-lead">Free includes brown noise, pink noise, rain, forest, ocean, cafe, fireplace, and singing bowls. Plus unlocks the full library.</p>
+      <div class="sounds">
+        <span class="tag">Brown noise</span><span class="tag">White noise</span><span class="tag">Pink noise</span>
+        <span class="tag">Green noise</span><span class="tag">Rain</span><span class="tag">Heavy rain</span>
+        <span class="tag">Window rain</span><span class="tag">Ocean</span><span class="tag">Creek</span>
+        <span class="tag">Forest</span><span class="tag">Crickets</span><span class="tag">Cafe</span>
+        <span class="tag">Fireplace</span><span class="tag">Fan</span><span class="tag">Singing bowls</span>
+        <span class="tag">Thunder</span><span class="tag">Wind</span><span class="tag">Waves</span>
+      </div>
+    </section>
+
+    <section id="plus">
+      <h2>Auraloft Plus</h2>
+      <p class="section-lead">Unlock the full library, two-sound mixing, saved scenes, and the compact player.</p>
+      <div class="plans">
+        <div class="plan"><div>Monthly</div><div class="price">$2.99</div><div class="per">per month</div></div>
+        <div class="plan featured"><div>Yearly</div><div class="price">$19.99</div><div class="per">per year · 7-day trial</div></div>
+        <div class="plan"><div>Lifetime</div><div class="price">$24.99</div><div class="per">pay once</div></div>
+      </div>
+      <p class="sub" style="margin-top:20px;">Cancel anytime in Microsoft Store → Payments &amp; subscriptions.</p>
+    </section>
+
+    <section id="faq">
+      <h2>Questions</h2>
+      <details><summary>Is Auraloft free?</summary><p>Yes. Eight sounds, the focus timer, and background/tray playback are free forever. Auraloft Plus unlocks the full library, mixing, scenes, and the compact player.</p></details>
+      <details><summary>Does it work offline?</summary><p>Yes. All sounds are built into the app, so it plays with no internet connection and no account.</p></details>
+      <details><summary>Can I play two sounds at once?</summary><p>Yes, with Plus you can mix a second layer — for example brown noise under rain — and save it as a scene.</p></details>
+      <details><summary>Does it keep playing in the background?</summary><p>Yes. Auraloft runs from the system tray with a compact always-on-top player and supports media keys.</p></details>
+      <details><summary>What versions of Windows are supported?</summary><p>Windows 10 and Windows 11.</p></details>
+    </section>
+  </main>
+
+  <footer>
+    <a class="cta" href="https://apps.microsoft.com/detail/9P3GD7FT5GVQ">Get Auraloft on the Microsoft Store</a>
+    <p style="margin-top:24px;">Auraloft by hears to you · <a href="https://apps.microsoft.com/detail/9P3GD7FT5GVQ" style="color:var(--sage);">Microsoft Store listing</a></p>
+  </footer>
+</div>
+</body>
+</html>
