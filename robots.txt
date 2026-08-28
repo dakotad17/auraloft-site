@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dakotad17.github.io/auraloft-site/sitemap.xml
