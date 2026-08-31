@@ -4,20 +4,20 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="google-site-verification" content="1Psn7IfaYQgI8zbg_k3EuVAl3JlLfkAxS05TXMVlgNw" />
-<title>Auraloft — White Noise, Rain & Focus Sounds for Windows</title>
-<meta name="description" content="Auraloft is a white noise and calming sounds app for Windows. Play brown noise, pink noise, rain, ocean, forest, cafe, and fireplace sounds to focus, relax, study, or sleep — with a focus timer and a background tray player. No account, no ads." />
+<title>Auraloft — White Noise, Rain & Focus Sounds for Windows and iPhone</title>
+<meta name="description" content="Auraloft is a white noise and calming sounds app for Windows and iPhone. Play brown noise, pink noise, rain, ocean, forest, cafe, and fireplace sounds to focus, relax, study, or sleep. Mix two sounds and set a focus timer. No account, no ads." />
 <link rel="canonical" href="https://dakotad17.github.io/auraloft-site/" />
 <meta name="theme-color" content="#F4EFE6" />
 
 <!-- Open Graph / social -->
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Auraloft — White Noise, Rain & Focus Sounds for Windows" />
-<meta property="og:description" content="Brown noise, rain, ocean, cafe, and fireplace sounds for focus, study, and sleep. Mix two sounds, set a focus timer, and play from the system tray. No account, no ads." />
+<meta property="og:title" content="Auraloft — White Noise, Rain & Focus Sounds for Windows and iPhone" />
+<meta property="og:description" content="Brown noise, rain, ocean, cafe, and fireplace sounds for focus, study, and sleep on Windows and iPhone. Mix two sounds. Set a focus timer. No account, no ads." />
 <meta property="og:url" content="https://dakotad17.github.io/auraloft-site/" />
 <meta property="og:image" content="https://dakotad17.github.io/auraloft-site/assets/screenshot.png" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Auraloft — White Noise, Rain & Focus Sounds for Windows" />
-<meta name="twitter:description" content="Calming sounds for focus, study, and sleep on Windows. Mix, focus timer, and a tray player. No account, no ads." />
+<meta name="twitter:title" content="Auraloft — White Noise, Rain & Focus Sounds for Windows and iPhone" />
+<meta name="twitter:description" content="Calming sounds for focus, study, and sleep on Windows and iPhone. Mix, focus timer. No account, no ads." />
 <meta name="twitter:image" content="https://dakotad17.github.io/auraloft-site/assets/screenshot.png" />
 
 <link rel="icon" href="assets/icon.png" />
@@ -28,9 +28,9 @@
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "Auraloft",
-  "operatingSystem": "Windows 10, Windows 11",
+  "operatingSystem": "Windows 10, Windows 11, iOS",
   "applicationCategory": "MultimediaApplication",
-  "description": "A white noise and calming sounds app for Windows. Play brown noise, pink noise, rain, ocean, forest, cafe, and fireplace sounds to focus, relax, study, or sleep, with a focus timer and a background tray player.",
+  "description": "A white noise and calming sounds app for Windows and iPhone. Play brown noise, pink noise, rain, ocean, forest, cafe, and fireplace sounds to focus, relax, study, or sleep, with mixing and a focus timer.",
   "downloadUrl": "https://apps.microsoft.com/detail/9P3GD7FT5GVQ",
   "installUrl": "https://apps.microsoft.com/detail/9P3GD7FT5GVQ",
   "offers": [
@@ -73,6 +73,9 @@
   .cta { display: inline-flex; align-items: center; gap: 10px; background: var(--ink); color: #fff; text-decoration: none;
          padding: 14px 22px; border-radius: 14px; font-weight: 600; font-size: 16px; transition: transform .12s ease, background .12s ease; }
   .cta:hover { transform: translateY(-1px); background: #000; }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 12px; }
+  .cta-secondary { background: transparent; color: var(--ink); border: 2px solid var(--ink); }
+  .cta-secondary:hover { background: var(--ink); color: #fff; }
   .sub { margin-top: 12px; font-size: 14px; color: var(--muted); }
   .shot { width: 100%; border-radius: 18px; border: 1px solid var(--line); box-shadow: 0 12px 40px rgba(0,0,0,.14); display: block; }
 
@@ -116,10 +119,14 @@
   <main>
     <section class="hero" style="border-top:none; padding-top:24px;">
       <div>
-        <h1>Calming sounds for focus, study, and sleep on Windows</h1>
-        <p class="lead">Auraloft plays white noise, brown noise, rain, ocean, forest, cafe, and fireplace sounds — mix two at once, set a focus timer, and leave it running quietly in the system tray. No account. No ads.</p>
-        <a class="cta" href="https://apps.microsoft.com/detail/9P3GD7FT5GVQ">Get it on the Microsoft Store</a>
-        <div class="sub">Free to start · Windows 10 &amp; 11 · No sign-in</div>
+        <h1>Calming sounds for focus, study, and sleep</h1>
+        <p class="lead">Auraloft plays white noise, brown noise, rain, ocean, forest, cafe, and fireplace sounds on Windows and iPhone. Mix two at once, set a focus timer, and keep playing in the background. No account. No ads.</p>
+        <div class="cta-row">
+          <a class="cta" href="https://apps.microsoft.com/detail/9P3GD7FT5GVQ">Get it on the Microsoft Store</a>
+          <!-- Swap search URL for https://apps.apple.com/app/idXXXX when the listing is live. -->
+          <a class="cta cta-secondary" href="https://apps.apple.com/us/search?term=Auraloft">iPhone on the App Store</a>
+        </div>
+        <div class="sub">Free to start · Windows 10 &amp; 11 · iPhone · No sign-in<br />iPhone is in Apple review; the App Store page appears when Apple approves it.</div>
       </div>
       <img class="shot" src="assets/screenshot.png" alt="Auraloft on Windows showing a library of calming sounds" />
     </section>
@@ -133,7 +140,7 @@
         <div class="feat"><h3>Cozy backgrounds</h3><p>Cafe chatter, a crackling fireplace, and warm room tones for reading and unwinding.</p></div>
         <div class="feat"><h3>Mix two sounds</h3><p>Layer a second sound — like brown noise under rain — and save it as a scene.</p></div>
         <div class="feat"><h3>Focus timer</h3><p>Set a session length and the sound fades out gently when time is up.</p></div>
-        <div class="feat"><h3>Lives in the tray</h3><p>Plays in the background with a compact always-on-top mini player and media keys.</p></div>
+        <div class="feat"><h3>Keeps playing</h3><p>On Windows it lives in the system tray with a compact player. On iPhone it keeps playing in the background.</p></div>
       </div>
     </section>
 
@@ -152,28 +159,32 @@
 
     <section id="plus">
       <h2>Auraloft Plus</h2>
-      <p class="section-lead">Unlock the full library, two-sound mixing, saved scenes, and the compact player.</p>
+      <p class="section-lead">Unlock the full library, two-sound mixing, and saved scenes. Windows Plus also includes the compact player.</p>
       <div class="plans">
         <div class="plan"><div>Monthly</div><div class="price">$2.99</div><div class="per">per month</div></div>
-        <div class="plan featured"><div>Yearly</div><div class="price">$19.99</div><div class="per">per year · 7-day trial</div></div>
+        <div class="plan featured"><div>Yearly</div><div class="price">$19.99</div><div class="per">per year</div></div>
         <div class="plan"><div>Lifetime</div><div class="price">$24.99</div><div class="per">pay once</div></div>
       </div>
-      <p class="sub" style="margin-top:20px;">Cancel anytime in Microsoft Store → Payments &amp; subscriptions.</p>
+      <p class="sub" style="margin-top:20px;">Windows and iPhone are separate purchases. Cancel Windows Plus in Microsoft Store → Payments &amp; billing. Cancel iPhone Plus in iPhone Settings → your name → Subscriptions. Windows yearly may include a trial at checkout; Apple Plus does not unless Apple shows one on the purchase sheet.</p>
     </section>
 
     <section id="faq">
       <h2>Questions</h2>
-      <details><summary>Is Auraloft free?</summary><p>Yes. Eight sounds, the focus timer, and background/tray playback are free forever. Auraloft Plus unlocks the full library, mixing, scenes, and the compact player.</p></details>
+      <details><summary>Is Auraloft free?</summary><p>Yes. Eight sounds and the focus timer are free. Auraloft Plus unlocks the full library, mixing, and scenes. Windows Plus also includes tray and compact-player features.</p></details>
       <details><summary>Does it work offline?</summary><p>Yes. All sounds are built into the app, so it plays with no internet connection and no account.</p></details>
       <details><summary>Can I play two sounds at once?</summary><p>Yes, with Plus you can mix a second layer — for example brown noise under rain — and save it as a scene.</p></details>
-      <details><summary>Does it keep playing in the background?</summary><p>Yes. Auraloft runs from the system tray with a compact always-on-top player and supports media keys.</p></details>
-      <details><summary>What versions of Windows are supported?</summary><p>Windows 10 and Windows 11.</p></details>
+      <details><summary>Does it keep playing in the background?</summary><p>Yes. On Windows it runs from the system tray. On iPhone it keeps playing with the screen off.</p></details>
+      <details><summary>Is Windows Plus the same as iPhone Plus?</summary><p>No. Each store is its own purchase. A Microsoft Store license does not unlock the iPhone app, and an App Store purchase does not unlock Windows.</p></details>
+      <details><summary>What devices are supported?</summary><p>Windows 10 and Windows 11, and iPhone. The iPhone app is in Apple review.</p></details>
     </section>
   </main>
 
   <footer>
-    <a class="cta" href="https://apps.microsoft.com/detail/9P3GD7FT5GVQ">Get Auraloft on the Microsoft Store</a>
-    <p style="margin-top:24px;">Auraloft by hears to you · <a href="https://apps.microsoft.com/detail/9P3GD7FT5GVQ" style="color:var(--sage);">Microsoft Store listing</a> · <a href="privacy.html" style="color:var(--sage);">Privacy</a> · <a href="terms.html" style="color:var(--sage);">Terms</a></p>
+    <div class="cta-row" style="justify-content:center;">
+      <a class="cta" href="https://apps.microsoft.com/detail/9P3GD7FT5GVQ">Microsoft Store</a>
+      <a class="cta cta-secondary" href="https://apps.apple.com/us/search?term=Auraloft">iPhone on the App Store</a>
+    </div>
+    <p style="margin-top:24px;">Auraloft by hears to you · <a href="https://apps.microsoft.com/detail/9P3GD7FT5GVQ" style="color:var(--sage);">Microsoft Store</a> · <a href="privacy.html" style="color:var(--sage);">Privacy</a> · <a href="terms.html" style="color:var(--sage);">Terms</a></p>
   </footer>
 </div>
 </body>
